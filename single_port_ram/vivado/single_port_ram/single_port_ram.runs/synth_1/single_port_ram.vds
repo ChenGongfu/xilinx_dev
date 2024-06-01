@@ -1,0 +1,309 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sun Jun  2 00:44:08 2024
+# Process ID: 4672
+# Current directory: C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/vivado/single_port_ram/single_port_ram.runs/synth_1
+# Command line: vivado.exe -log single_port_ram.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source single_port_ram.tcl
+# Log file: C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/vivado/single_port_ram/single_port_ram.runs/synth_1/single_port_ram.vds
+# Journal file: C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/vivado/single_port_ram/single_port_ram.runs/synth_1\vivado.jou
+# Running On        :jeffrey_win11
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :13th Gen Intel(R) Core(TM) i5-13600KF
+# CPU Frequency     :3494 MHz
+# CPU Physical cores:14
+# CPU Logical cores :20
+# Host memory       :68550 MB
+# Swap memory       :4294 MB
+# Total Virtual     :72845 MB
+# Available Virtual :54735 MB
+#-----------------------------------------------------------
+source single_port_ram.tcl -notrace
+Command: synth_design -top single_port_ram -part xc7z020clg400-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 21296
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1102.137 ; gain = 452.527
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'single_port_ram' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:29]
+INFO: [Synth 8-6155] done synthesizing module 'single_port_ram' (0#1) [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:29]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1265.199 ; gain = 615.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1265.199 ; gain = 615.590
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1265.199 ; gain = 615.590
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+INFO: [Device 21-9227] Part: xc7z020clg400-2 does not have CEAM library.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1270.352 ; gain = 620.742
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1465.871 ; gain = 816.262
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 1474.754 ; gain = 825.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 1474.754 ; gain = 825.145
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 1474.777 ; gain = 825.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:08 ; elapsed = 00:00:14 . Memory (MB): peak = 1474.777 ; gain = 825.168
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[0]__0[7] with 1st driver pin 'genblk1[0].mem_reg[0][7]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[0]__0[7] with 2nd driver pin 'mem_reg[0][7]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[0]__0[6] with 1st driver pin 'genblk1[0].mem_reg[0][6]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[0]__0[6] with 2nd driver pin 'mem_reg[0][6]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[0]__0[5] with 1st driver pin 'genblk1[0].mem_reg[0][5]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[0]__0[5] with 2nd driver pin 'mem_reg[0][5]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[0]__0[4] with 1st driver pin 'genblk1[0].mem_reg[0][4]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[0]__0[4] with 2nd driver pin 'mem_reg[0][4]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[0]__0[3] with 1st driver pin 'genblk1[0].mem_reg[0][3]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[0]__0[3] with 2nd driver pin 'mem_reg[0][3]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[0]__0[2] with 1st driver pin 'genblk1[0].mem_reg[0][2]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[0]__0[2] with 2nd driver pin 'mem_reg[0][2]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[0]__0[1] with 1st driver pin 'genblk1[0].mem_reg[0][1]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[0]__0[1] with 2nd driver pin 'mem_reg[0][1]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[0]__0[0] with 1st driver pin 'genblk1[0].mem_reg[0][0]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[0]__0[0] with 2nd driver pin 'mem_reg[0][0]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[1]__0[7] with 1st driver pin 'genblk1[1].mem_reg[1][7]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[1]__0[7] with 2nd driver pin 'mem_reg[1][7]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[1]__0[6] with 1st driver pin 'genblk1[1].mem_reg[1][6]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[1]__0[6] with 2nd driver pin 'mem_reg[1][6]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[1]__0[5] with 1st driver pin 'genblk1[1].mem_reg[1][5]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[1]__0[5] with 2nd driver pin 'mem_reg[1][5]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[1]__0[4] with 1st driver pin 'genblk1[1].mem_reg[1][4]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[1]__0[4] with 2nd driver pin 'mem_reg[1][4]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[1]__0[3] with 1st driver pin 'genblk1[1].mem_reg[1][3]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[1]__0[3] with 2nd driver pin 'mem_reg[1][3]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[1]__0[2] with 1st driver pin 'genblk1[1].mem_reg[1][2]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[1]__0[2] with 2nd driver pin 'mem_reg[1][2]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[1]__0[1] with 1st driver pin 'genblk1[1].mem_reg[1][1]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[1]__0[1] with 2nd driver pin 'mem_reg[1][1]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[1]__0[0] with 1st driver pin 'genblk1[1].mem_reg[1][0]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[1]__0[0] with 2nd driver pin 'mem_reg[1][0]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[2]__0[7] with 1st driver pin 'genblk1[2].mem_reg[2][7]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[2]__0[7] with 2nd driver pin 'mem_reg[2][7]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[2]__0[6] with 1st driver pin 'genblk1[2].mem_reg[2][6]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[2]__0[6] with 2nd driver pin 'mem_reg[2][6]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[2]__0[5] with 1st driver pin 'genblk1[2].mem_reg[2][5]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[2]__0[5] with 2nd driver pin 'mem_reg[2][5]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[2]__0[4] with 1st driver pin 'genblk1[2].mem_reg[2][4]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[2]__0[4] with 2nd driver pin 'mem_reg[2][4]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[2]__0[3] with 1st driver pin 'genblk1[2].mem_reg[2][3]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[2]__0[3] with 2nd driver pin 'mem_reg[2][3]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[2]__0[2] with 1st driver pin 'genblk1[2].mem_reg[2][2]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[2]__0[2] with 2nd driver pin 'mem_reg[2][2]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[2]__0[1] with 1st driver pin 'genblk1[2].mem_reg[2][1]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[2]__0[1] with 2nd driver pin 'mem_reg[2][1]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[2]__0[0] with 1st driver pin 'genblk1[2].mem_reg[2][0]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[2]__0[0] with 2nd driver pin 'mem_reg[2][0]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[3]__0[7] with 1st driver pin 'genblk1[3].mem_reg[3][7]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[3]__0[7] with 2nd driver pin 'mem_reg[3][7]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[3]__0[6] with 1st driver pin 'genblk1[3].mem_reg[3][6]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[3]__0[6] with 2nd driver pin 'mem_reg[3][6]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[3]__0[5] with 1st driver pin 'genblk1[3].mem_reg[3][5]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[3]__0[5] with 2nd driver pin 'mem_reg[3][5]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[3]__0[4] with 1st driver pin 'genblk1[3].mem_reg[3][4]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[3]__0[4] with 2nd driver pin 'mem_reg[3][4]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[3]__0[3] with 1st driver pin 'genblk1[3].mem_reg[3][3]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[3]__0[3] with 2nd driver pin 'mem_reg[3][3]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[3]__0[2] with 1st driver pin 'genblk1[3].mem_reg[3][2]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[3]__0[2] with 2nd driver pin 'mem_reg[3][2]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[3]__0[1] with 1st driver pin 'genblk1[3].mem_reg[3][1]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[3]__0[1] with 2nd driver pin 'mem_reg[3][1]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[3]__0[0] with 1st driver pin 'genblk1[3].mem_reg[3][0]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[3]__0[0] with 2nd driver pin 'mem_reg[3][0]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[4]__0[7] with 1st driver pin 'genblk1[4].mem_reg[4][7]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[4]__0[7] with 2nd driver pin 'mem_reg[4][7]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[4]__0[6] with 1st driver pin 'genblk1[4].mem_reg[4][6]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[4]__0[6] with 2nd driver pin 'mem_reg[4][6]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[4]__0[5] with 1st driver pin 'genblk1[4].mem_reg[4][5]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[4]__0[5] with 2nd driver pin 'mem_reg[4][5]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[4]__0[4] with 1st driver pin 'genblk1[4].mem_reg[4][4]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[4]__0[4] with 2nd driver pin 'mem_reg[4][4]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[4]__0[3] with 1st driver pin 'genblk1[4].mem_reg[4][3]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[4]__0[3] with 2nd driver pin 'mem_reg[4][3]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[4]__0[2] with 1st driver pin 'genblk1[4].mem_reg[4][2]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[4]__0[2] with 2nd driver pin 'mem_reg[4][2]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[4]__0[1] with 1st driver pin 'genblk1[4].mem_reg[4][1]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[4]__0[1] with 2nd driver pin 'mem_reg[4][1]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[4]__0[0] with 1st driver pin 'genblk1[4].mem_reg[4][0]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[4]__0[0] with 2nd driver pin 'mem_reg[4][0]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[5]__0[7] with 1st driver pin 'genblk1[5].mem_reg[5][7]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[5]__0[7] with 2nd driver pin 'mem_reg[5][7]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[5]__0[6] with 1st driver pin 'genblk1[5].mem_reg[5][6]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[5]__0[6] with 2nd driver pin 'mem_reg[5][6]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[5]__0[5] with 1st driver pin 'genblk1[5].mem_reg[5][5]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[5]__0[5] with 2nd driver pin 'mem_reg[5][5]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[5]__0[4] with 1st driver pin 'genblk1[5].mem_reg[5][4]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[5]__0[4] with 2nd driver pin 'mem_reg[5][4]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[5]__0[3] with 1st driver pin 'genblk1[5].mem_reg[5][3]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[5]__0[3] with 2nd driver pin 'mem_reg[5][3]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[5]__0[2] with 1st driver pin 'genblk1[5].mem_reg[5][2]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[5]__0[2] with 2nd driver pin 'mem_reg[5][2]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[5]__0[1] with 1st driver pin 'genblk1[5].mem_reg[5][1]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[5]__0[1] with 2nd driver pin 'mem_reg[5][1]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[5]__0[0] with 1st driver pin 'genblk1[5].mem_reg[5][0]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[5]__0[0] with 2nd driver pin 'mem_reg[5][0]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[6]__0[7] with 1st driver pin 'genblk1[6].mem_reg[6][7]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[6]__0[7] with 2nd driver pin 'mem_reg[6][7]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[6]__0[6] with 1st driver pin 'genblk1[6].mem_reg[6][6]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:57]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin mem[6]__0[6] with 2nd driver pin 'mem_reg[6][6]/Q' [C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/single_port_ram.v:63]
+INFO: [Common 17-14] Message 'Synth 8-6859' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|     2048|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 1474.777 ; gain = 825.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 1474.777 ; gain = 825.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 1474.777 ; gain = 825.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 1474.777 ; gain = 825.168
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |BUFG  |     2|
+|2     |LUT2  |    50|
+|3     |LUT4  |    30|
+|4     |LUT6  |   800|
+|5     |MUXF7 |   272|
+|6     |MUXF8 |   136|
+|7     |FDCE  |     8|
+|8     |FDRE  |  4096|
+|9     |IBUF  |    19|
+|10    |OBUF  |     8|
++------+------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |  5421|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 1474.777 ; gain = 825.168
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 4096 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 1474.777 ; gain = 825.168
+Synthesis Optimization Complete : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 1474.777 ; gain = 825.168
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1486.828 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 408 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'single_port_ram' is not ideal for floorplanning, since the cellview 'single_port_ram' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1553.652 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: e26b66a6
+INFO: [Common 17-83] Releasing license: Synthesis
+16 Infos, 2 Warnings, 100 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:16 . Memory (MB): peak = 1553.652 ; gain = 908.027
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1553.652 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ChenG/ALL_DATA/github/zynq_exp/single_port_ram/vivado/single_port_ram/single_port_ram.runs/synth_1/single_port_ram.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file single_port_ram_utilization_synth.rpt -pb single_port_ram_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun Jun  2 00:44:32 2024...

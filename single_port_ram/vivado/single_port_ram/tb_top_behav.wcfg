@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
+      <ZoomEndTime time="1,075.001 ns"></ZoomEndTime>
+      <Cursor1Time time="121.000 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="288"></NameColumnWidth>
+      <ValueColumnWidth column_width="90"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="11" />
+   <wvobject fp_name="/tb_top/clk" type="array">
+      <obj_property name="ElementShortName">clk[0:0]</obj_property>
+      <obj_property name="ObjectShortName">clk[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/rst_n" type="array">
+      <obj_property name="ElementShortName">rst_n[0:0]</obj_property>
+      <obj_property name="ObjectShortName">rst_n[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/wr_en" type="array">
+      <obj_property name="ElementShortName">wr_en[0:0]</obj_property>
+      <obj_property name="ObjectShortName">wr_en[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/addr" type="array">
+      <obj_property name="ElementShortName">addr[7:0]</obj_property>
+      <obj_property name="ObjectShortName">addr[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/wr_data" type="array">
+      <obj_property name="ElementShortName">wr_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">wr_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/rd_data" type="array">
+      <obj_property name="ElementShortName">rd_data[7:0]</obj_property>
+      <obj_property name="ObjectShortName">rd_data[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/i" type="array">
+      <obj_property name="ElementShortName">i[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/DWIDTH" type="array">
+      <obj_property name="ElementShortName">DWIDTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DWIDTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/DEPTH" type="array">
+      <obj_property name="ElementShortName">DEPTH[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DEPTH[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/uut/mem" type="array">
+      <obj_property name="ElementShortName">mem[0:255][7:0]</obj_property>
+      <obj_property name="ObjectShortName">mem[0:255][7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/wr_en" type="array">
+      <obj_property name="ElementShortName">wr_en[0:0]</obj_property>
+      <obj_property name="ObjectShortName">wr_en[0:0]</obj_property>
+   </wvobject>
+</wave_config>
